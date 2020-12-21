@@ -7,6 +7,7 @@
     "react-scripts": "1.1.1"
   },
   "dependencies": {
+    "cypress": "^6.1.0",
     "history": "^4.6.3",
     "marked": "^0.3.6",
     "prop-types": "^15.5.10",
@@ -25,7 +26,8 @@
   "scripts": {
     "start": "cross-env PORT=4100 react-scripts start",
     "build": "react-scripts build",
-    "test": "cross-env PORT=4100 react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "testss": "cross-env PORT=4100 react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "test": "yarn cypress run --spec 'cypress/integration/nav.spec.js'"
   }
 }
